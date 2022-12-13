@@ -1,0 +1,24 @@
+.header {
+    background-color: #cfcfcfee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cartWrapper img {
+    width: 30px;
+    height: auto;
+    border-radius: 50px;
+    padding: 2px;
+    background-color: #000;
+}
+
+.header span {
+    position: absolute;
+    right: 14%;
+    top: 2%;
+}
+
+.contentWrapper {
+    
+}

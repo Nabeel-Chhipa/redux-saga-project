@@ -1,4 +1,4 @@
-import { addToCart, removeToCart } from "../redux/action";
+import { addToCart, emptyCart, removeToCart } from "../redux/action";
 import { useDispatch } from "react-redux";
 
 const Main = () => {
@@ -26,6 +26,13 @@ const Main = () => {
             }}
         >
             Remove To Cart
+        </button>
+        <button
+            onClick={() => {
+            dispatch(emptyCart());
+            }}
+        >
+            Empty Cart
         </button>
         </div>
     </div>

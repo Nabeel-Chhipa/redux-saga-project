@@ -1,4 +1,4 @@
-import { Add_To_Cart, Remove_To_Cart } from "./contant";
+import { Add_To_Cart, Empty_Cart, Remove_To_Cart } from "./contant";
 
 export const cartData = (data = [], action) => {
   console.log("reducer console", action);
@@ -17,6 +17,15 @@ export const cartData = (data = [], action) => {
           : (data.length = data.length - 1);
       }
       return [...data];
+      break;
+      case Empty_Cart:
+        {
+            data.length == 0
+                ? console.log('Cart Empty Successfully')
+                : data = []
+        }
+        return data
+        break;
     default:
       return data;
       break;

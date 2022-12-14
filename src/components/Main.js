@@ -1,9 +1,13 @@
 import { addToCart, emptyCart, removeToCart } from "../redux/action";
 import { useDispatch } from "react-redux";
+import { productList } from "../redux/productAction";
+import { useSelector } from "react-redux";
 
 const Main = () => {
 
     const dispatch = useDispatch()
+    const result = useSelector(state => state.productData)
+    console.log(result)
     const productData = {
         id: 1,
         name: 'T-shirt',
@@ -33,6 +37,13 @@ const Main = () => {
             }}
         >
             Empty Cart
+        </button>
+        <button
+            onClick={() => {
+            dispatch(productList());
+            }}
+        >
+            Get Product List
         </button>
         </div>
     </div>

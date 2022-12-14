@@ -1,4 +1,4 @@
-import {Add_To_Cart, Empty_Cart, Remove_To_Cart} from './contant'
+import {Add_To_Cart, Empty_Cart, Remove_To_Cart} from './constant'
 
 export const addToCart = (data) => {
   console.log("add to cart action", data);

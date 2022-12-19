@@ -7,7 +7,7 @@ const Main = () => {
 
     const dispatch = useDispatch()
     const result = useSelector(state => state.productData)
-    console.log(result)
+    console.log('data in main component from saga', result)
     const productData = {
         id: 1,
         name: 'T-shirt',
